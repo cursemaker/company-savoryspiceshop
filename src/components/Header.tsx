@@ -5,10 +5,8 @@ import { FaUser } from "react-icons/fa";
 import { GrMapLocation } from "react-icons/gr";
 import { IoSearchOutline } from "react-icons/io5";
 import { PiCurrencyCircleDollar } from "react-icons/pi";
-import { TfiMapAlt } from "react-icons/tfi";
 import type { IconType } from "react-icons";
 import { BsBasket3 } from "react-icons/bs";
-import { MdKeyboardArrowDown } from "react-icons/md";
 import { FaLocationDot } from "react-icons/fa6";
 
 export default function HeaderNav() {
@@ -28,70 +26,77 @@ export default function HeaderNav() {
     { name: "My Account", icon: "FaUser" },
   ];
   return (
-    <header className="sticky top-0 max-w-screen z-50">
-      <div title="header-wrapper" className="bg-[#153961] w-full relative z-[700]">
+    <header className='sticky top-0 max-w-screen z-[999]'>
+      <div title='header-wrapper' className='bg-[#153961] w-full relative z-[700]'>
         <div
-          title="site-header-main"
-          className="p-[20px_10px_10px] mx-auto max-w-[1400px] min-h-[102px] flex items-center w-full">
-          <div title="site-header-main-content" className="flex item flex-nowrap justify-center">
-            <div
-              title="site-header-logo"
-              className="relative aspect-[85/16] max-w-[170px] mr-[25px] h-auto flex items-center">
+          title='site-header-main'
+          className='p-[20px_10px_10px] mx-auto max-w-[1400px] md:min-h-[102px] max-h-[72px] flex items-center max-md:justify-center min-w-full'>
+          <div title='site-header-main-content' className='flex item flex-nowrap justify-center'>
+            <Link href={"/"}
+              title='site-header-logo'
+              className='relative aspect-[85/16] max-w-[170px] mr-[25px] h-auto flex items-center'>
               <Image
-                src="https://www.savoryspiceshop.com/cdn/shop/files/Savory_logo_web_996x187.png"
-                alt="logo"
+                src='https://www.savoryspiceshop.com/cdn/shop/files/Savory_logo_web_996x187.png'
+                alt='logo'
                 width={170}
                 height={32}
-                layout="responsive"
-                objectFit="fill"
+                layout='responsive'
+                objectFit='fill'
               />
-            </div>
-            <div title="live-search-bar" className="mr-[2.5rem] flex">
-              <div className="h-[40px]">
+            </Link>
+            <div title='live-search-bar' className='mr-[2.5rem] max-md:hidden flex'>
+              <div className='h-[40px]'>
                 <input
-                  type="text"
-                  placeholder="Search for spices, blends, recipes and more..."
-                  className="w-[450px] h-full bg-white text-[#4d4d4d] font-bold leading-[1.15] p-[15px_10px]"
+                  type='text'
+                  placeholder='Search for spices, blends, recipes and more...'
+                  className='w-[450px] h-full bg-white text-[#4d4d4d] font-bold leading-[1.15] p-[15px_10px]'
                 />
               </div>
-              <button type="button" className="h-full w-10 flex items-center justify-center bg-white">
-                <IoSearchOutline className="text-[20px] font-bold text-[#AEAEAE]" />
+              <button type='button' className='h-full w-10 flex items-center justify-center bg-white'>
+                <IoSearchOutline className='text-[20px] font-bold text-[#AEAEAE]' />
               </button>
             </div>
+            <div className="max-md:flex">
+
             {headerButtons.map((item: HeaderButton, index: number) => {
               const IconComponent = headerIconMap[item.icon];
               return (
-                <div title={`${item.name.toLowerCase()}-btn`} key={index} className="px-[15px] flex items-center">
-                  <Link href="" className="text-white font-normal text-xl flex justify-center items-center">
-                    <div className="px-2 *:text-[18px]">{IconComponent && <IconComponent size={24} />}</div>
-                    <span>{item.name}</span>
+                <div title={`${item.name.toLowerCase()}-btn`} key={index} className='md:px-[15px] px-1 flex items-center'>
+                  <Link href='' className='text-white font-normal text-xl flex justify-center items-center'>
+                    <div className='px-1 *:text-[18px]'>{IconComponent && <IconComponent size={24} />}</div>
+                    <span className="max-md:hidden">{item.name}</span>
                   </Link>
                 </div>
               );
             })}
+            </div>
           </div>
-          <div title="carts" className="flex justify-end">
-            <div title="cart-btn" className="px-[15px] flex items-center">
-              <Link href="" className="text-white font-normal text-xl flex justify-center items-center">
-                <div className="px-2 *:text-[18px]">
+          <div title='carts' className='flex justify-end'>
+            <div title='cart-btn' className='md:px-[15px] px-1 flex max-md:justify-end items-center'>
+              <Link href='' className='text-white font-normal text-xl flex justify-center items-center'>
+                <div className='px-1 *:text-[18px]'>
                   <BsBasket3 />
                 </div>
-                <span>Cart</span>
+                <span className="max-md:hidden">Cart</span>
               </Link>
             </div>
           </div>
         </div>
-        <div title="site-navigation-wrapper" className="bg-[#1F5188] ">
-          <div title="site-navigation-main" className="h-[56px] max-w-[1400px] mx-auto flex justify-between">
-            <div className="flex flex-1 items-center justify-start">
-              <div className="p-[10px_15px] text-xl flex items-center">
-                Spice & Blends <MdKeyboardArrowDown />
-              </div>
-              <div className="p-[10px_15px] text-xl flex items-center">About Us</div>
-              <div className="p-[10px_15px] text-xl flex items-center">Our Teams</div>
+        <div title='site-navigation-wrapper' className='bg-[#1F5188] '>
+          <div title='site-navigation-main' className='md:h-[56px] h-10 max-w-[1400px] mx-auto flex justify-between text-white'>
+            <div className='flex flex-1 items-center justify-start'>
+              <Link href={'/all-products'} className='md:p-[10px_15px] p-[8px_12px] text-xl flex items-center justify-center hover:text-slate-200'>
+                Spice & Blends
+              </Link>
+              <Link href='/about-us' className='p-[10px_15px] text-xl flex items-center hover:text-slate-200'>
+                About Us
+              </Link>
+              <Link href='/teams' className='p-[10px_15px] text-xl flex items-center hover:text-slate-200'>
+                Our Teams
+              </Link>
             </div>
-            <div className="flex items-center gap-2 text-[17px] mr-32">
-              <FaLocationDot /> <span className="underline">Set my spice store for info or pick up</span>
+            <div className='max-md:hidden flex items-center gap-2 text-[17px] mr-32'>
+              <FaLocationDot /> <span className='underline'>Set my spice store for info or pick up</span>
             </div>
           </div>
         </div>

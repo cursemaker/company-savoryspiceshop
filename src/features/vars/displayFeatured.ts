@@ -34,8 +34,8 @@ export const displayFeatured = [
   {
     name: "Thai Coconut Curry Soup",
     review: 121,
-    imgUrl1: "https://www.savoryspiceshop.com/cdn/shop/files/thai-coconut-curry2_web-crop_1200x1000.jpg?v=1739378647",
-    imgUrl2:
+    imgUrl2: "https://www.savoryspiceshop.com/cdn/shop/files/thai-coconut-curry2_web-crop_1200x1000.jpg?v=1739378647",
+    imgUrl1:
       "https://www.savoryspiceshop.com/cdn/shop/files/s_e_thai-coconut-curry-soup_f_1_1200x1000.jpg?v=1739378647",
     price: [
       { size: "1 Count", price: 7.99 },

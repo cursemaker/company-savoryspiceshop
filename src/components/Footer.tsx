@@ -106,10 +106,10 @@ export default function Footer() {
           </div>
         </div>
         <div title="copyright" className="px-[25px] mx-auto max-w-[1440px]">
-          <div title="footer-information" className="flex mt-[70px] flex-nowrap">
-            <div title="left" className="min-w-[60%] pr-[12.5px] text-left order-1"></div>
-            <div title="right" className="w-[40%] pl-[12.5px] ">
-              <div className="pr-[12.5px] mt-[20px] text-[18px]">
+          <div title="footer-information" className="flex md:mt-[70px] mt-14 flex-nowrap">
+            <div title="left" className="md:min-w-[60%] pr-[12.5px] text-left order-1"></div>
+            <div title="right" className="md:w-[40%] pl-[12.5px] ">
+              <div className="pr-[12.5px] my-[20px] md:text-[18px] text-sm">
                 Copyright © 2025 Savory Spice. All rights reserved.
               </div>
             </div>

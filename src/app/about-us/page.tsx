@@ -1,6 +1,6 @@
-import Image from "next/image";
-import Link from "next/link";
-import * as React from "react";
+import Image from 'next/image';
+import Link from 'next/link';
+import * as React from 'react';
 
 export default function AboutUsPage() {
   return (
@@ -104,7 +104,7 @@ export default function AboutUsPage() {
             title='home-story-content'
             className='flex max-md:flex-col md:flex-wrap max-w-[1440px] md:p-[75px_100px] p-[20px_40px] md:mx-auto'>
             <div title='home-story-info' className='md:w-[50%] w-full md:p-[0_30px_0_40px] text-black order-2'>
-              <h2 className='text-left font-extrabold text-2xl leading-[43px] my-[0.83em]'>Values</h2>
+              <h2 className='md:text-left text-center font-extrabold text-2xl leading-[43px] my-[0.83em]'>Values</h2>
               <div className='md:pr-5 font-base text-lg leading-[22px] '>
                 <p className='my-[1em]'>
                   <p className='font-semibold inline-block'>AUTHENTICITY- </p> We value building real relationships
@@ -133,7 +133,9 @@ export default function AboutUsPage() {
                 {`Find A Savory Spice Near You`}
               </Link>
             </div>
-            <div title='home-story-img' className='max-md:w-[50%] min-w-full md:aspect-square md:pl-10 relative order-1'>
+            <div
+              title='home-story-img'
+              className='max-md:w-[50%] min-w-full md:aspect-square md:pl-10 relative order-1'>
               <Image
                 src={'https://www.savoryspiceshop.com/cdn/shop/files/low-countryBlogbody.jpg'}
                 alt='home-story-img'

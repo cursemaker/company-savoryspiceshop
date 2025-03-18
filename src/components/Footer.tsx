@@ -24,7 +24,7 @@ export default function Footer() {
     <div>
       <section
         title="site-footer-wrapper"
-        className="bg-[#153961] bg-[url('https://www.savoryspiceshop.com/cdn/shop/files/illustration-footer.png?v=1631640818')] bg-no-repeat md:bg-[position:90%_90%] bg-[position:80%_30%] bg-[length:50%_auto] md:p-[58.5px_0_56.25px] mx-auto mt-4 relative text-white">
+        className="bg-[#153961] bg-[url('https://www.savoryspiceshop.com/cdn/shop/files/illustration-footer.png')] bg-no-repeat md:bg-[position:90%_90%] bg-[position:80%_30%] bg-[length:50%_auto] md:p-[58.5px_0_56.25px] mx-auto mt-4 relative text-white">
         <div title="custom-newslater-wrapper" className="w-[95vw] max-w-[1380px] md:py-[50px] py-5 mx-auto">
           <div title="custom-newsletter-txt" className="font-bold text-base leading-[22px] max-md:mx-4">
             Join our email list and Loyalty Club to earn points and save 10% on your first order!

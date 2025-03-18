@@ -18,7 +18,7 @@ export default function Home() {
         <div className='flex items-stretch flex-wrap max-md:flex-col'>
           <div className='md:max-w-[65%] w-full md:h-[560px] relative'>
             <Image
-              src='https://www.savoryspiceshop.com/cdn/shop/files/Mar7_Web2_994x560_crop_center.jpg'
+              src='/image/banner.webp'
               alt=''
               width={994}
               height={560}

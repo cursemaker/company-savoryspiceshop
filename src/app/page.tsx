@@ -407,18 +407,18 @@ export default function Home() {
             <h2 className='text-left font-black text-4xl leading-[43px] my-[0.83em]'>{`Who's Talking About Us`}</h2>
             <div
               title='home-logo-wrapper'
-              className='md:mt-[60px] max-md:grid max-md:grid-cols-2 max-md:gap-5 max-w-4xl'>
+              className='md:mt-[60px] max-md:grid max-md:grid-cols-2 max-md:gap-5 flex justify-between min-w-full'>
               {displayLogos.map((item, index) => (
-                <div title='home-logo-img' className='relative max-md:flex max-md:justify-center gap-5' key={index}>
-                  <Image
-                    src={item.imgUrl}
-                    alt={item.imgAlt}
-                    loading='lazy'
-                    width={item.width}
-                    height={item.height}
-                    className='block'
-                  />
-                </div>
+              <div title='home-logo-img' className='relative max-md:flex max-md:justify-center' key={index}>
+                <Image
+                src={item.imgUrl}
+                alt={item.imgAlt}
+                loading='lazy'
+                width={item.width}
+                height={item.height}
+                className='block'
+                />
+              </div>
               ))}
             </div>
           </div>

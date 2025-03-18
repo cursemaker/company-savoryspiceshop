@@ -46,7 +46,7 @@ export default function AboutUsPage() {
             </div>
             <div
               title='home-story-img'
-              className='max-md:w-[50%] min-w-full aspect-square md:pl-10 relative max-md:order-1'>
+              className='md:w-[50%] max-md:min-w-full aspect-square md:pl-10 relative max-md:order-1'>
               <Image
                 src={
                   'https://www.savoryspiceshop.com/cdn/shop/files/mikejanet-about_426166a1-33e4-42b2-9b20-48f660a03850.jpg'
@@ -66,7 +66,7 @@ export default function AboutUsPage() {
           <div
             title='home-story-content'
             className='flex max-md:flex-col md:flex-wrap max-w-[1440px] md:p-[75px_100px] p-[20px_40px] md:mx-auto'>
-            <div title='home-story-img' className='max-md:w-[50%] min-w-full h-fit md:aspect-square md:pl-10 relative'>
+            <div title='home-story-img' className='md:w-[50%] max-md:min-w-full h-fit md:pl-10 relative'>
               <Image
                 src={
                   'https://www.savoryspiceshop.com/cdn/shop/files/MicrosoftTeams-image_12_cb94f62a-9f85-4cc9-9720-71f36331dc4d.jpg'
@@ -103,7 +103,7 @@ export default function AboutUsPage() {
           <div
             title='home-story-content'
             className='flex max-md:flex-col md:flex-wrap max-w-[1440px] md:p-[75px_100px] p-[20px_40px] md:mx-auto'>
-            <div title='home-story-info' className='md:w-[50%] w-full md:p-[0_30px_0_40px] text-black order-2'>
+            <div title='home-story-info' className='md:w-[50%] w-full md:p-[0_30px_0_40px] text-black max-md:order-2'>
               <h2 className='md:text-left text-center font-extrabold text-2xl leading-[43px] my-[0.83em]'>Values</h2>
               <div className='md:pr-5 font-base text-lg leading-[22px] '>
                 <p className='my-[1em]'>
@@ -135,7 +135,7 @@ export default function AboutUsPage() {
             </div>
             <div
               title='home-story-img'
-              className='max-md:w-[50%] min-w-full md:aspect-square md:pl-10 relative order-1'>
+              className='md:w-[50%] max-md:min-w-full md:pl-10 relative max-md:order-1'>
               <Image
                 src={'https://www.savoryspiceshop.com/cdn/shop/files/low-countryBlogbody.jpg'}
                 alt='home-story-img'
@@ -153,7 +153,7 @@ export default function AboutUsPage() {
           <div
             title='home-story-content'
             className='flex max-md:flex-col md:flex-wrap max-w-[1440px] md:p-[75px_100px] p-[20px_40px] md:mx-auto'>
-            <div title='home-story-img' className='max-md:w-[50%] min-w-full md:aspect-square md:pl-10 relative'>
+            <div title='home-story-img' className='md:w-[50%] max-md:min-w-full md:pl-10 relative'>
               <Image
                 src={'https://www.savoryspiceshop.com/cdn/shop/files/asian-spice-blogbody4_blog.jpg'}
                 alt='home-story-img'

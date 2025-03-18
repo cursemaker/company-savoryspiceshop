@@ -22,6 +22,10 @@ export default function Home() {
               alt=''
               width={994}
               height={560}
+              priority
+              loading="eager"
+              placeholder="blur"
+              blurDataURL='https://www.savoryspiceshop.com/cdn/shop/files/Mar7_Web2_994x560_crop_center.jpg'
             />
           </div>
           <div className='md:px-20 px-8 md:max-w-[35%] flex flex-col items-start justify-center w-full md:h-[560px] h-full py-8 bg-[#B4BA74]'>
